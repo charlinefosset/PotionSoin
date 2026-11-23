@@ -17,8 +17,18 @@
  */
 class Program
 {
-    static void Main(string[] args)
+    static void Main()
     {
-        
+        UsePotions(50,30);
+        UsePotions(20,50);
     }
+
+    static void UsePotions(int healthPoints, int healingAmount)
+    {
+        Console.WriteLine("Le héros possède " + healthPoints + " PV et récupère" + healingAmount + " PV");
+        Console.WriteLine("Le héros possède maintenant " + (healthPoints + healingAmount) + " PV");
+    }
+    
 }
+
+    
